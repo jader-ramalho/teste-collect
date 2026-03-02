@@ -1,0 +1,21 @@
+<h1>CollectABA</h1>
+
+<p>Faz que conta que você está vendo o site ou o aplicativo!</p>
+
+<p><a href="https://app.talkhub.digital/hc/central-de-ajuda-do-collectaba">Central de ajuda</a></p>
+
+<script>
+  (function(d,t) {
+    var BASE_URL="https://app.talkhub.digital";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.async = true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({
+        websiteToken: 'zRP7NJnobQYhYGBvDk8HEfcJ',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
+</script>
